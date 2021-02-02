@@ -74,7 +74,7 @@
             margin-left: .2rem;
         }
 
-        hr{
+        .hr{
             width: 100%;
             margin-top: 10vh !important;
             display: block; height: 1px;
@@ -94,7 +94,7 @@
     @media (min-width: 1600px) {
         .container{
             padding: 6rem 14rem; 
-            padding-bottom: 0;
+            padding-bottom: 0 ;
         }
     }
     

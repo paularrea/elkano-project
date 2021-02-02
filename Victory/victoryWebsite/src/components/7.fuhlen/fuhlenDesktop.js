@@ -2,8 +2,6 @@ import React from "react"
 import styles from "./fuhlen.module.scss"
 
 import FuhlenImgDesktop from "./fuhlenImgDesktop"
-import FuhlenImgTwo from "./fuhlenImgTwo"
-
 import gif from "../../gif/victory.gif"
 
 const FuhlenDesktop = () => {

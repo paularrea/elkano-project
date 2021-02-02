@@ -1,5 +1,6 @@
 import React from "react"
 import Logo from "../header/components/logo"
+import MediaQuery from "react-responsive"
 
 import styles from "./footer.module.scss"
 
@@ -8,13 +9,15 @@ import FacebookIcon from "../icons/media-icons/fbIcon"
 import YoutubeIcon from "../icons/media-icons/youtubeIcon"
 import TwitterIcon from "../icons/media-icons/twitterIcon"
 import InstagramIcon from "../icons/media-icons/instaIcon"
-
 import LocationIcon from "../icons/contact-icons/locationIcon"
 import MailIcon from "../icons/contact-icons/mailIcon"
 import PhoneIcon from "../icons/contact-icons/phoneIcon"
+import FooterDesktop from "./footerDesktop"
 
 const Footer = () => {
   return (
+    <>
+    <MediaQuery maxWidth={800}>
     <div className={styles.container}>
       <Logo />
       <p>
@@ -69,6 +72,11 @@ const Footer = () => {
         <p>© Alle Rechte vorbehalten</p>
       </div>
     </div>
+    </MediaQuery>
+      <MediaQuery minWidth={800}>
+        <FooterDesktop/>
+      </MediaQuery>
+    </>
   )
 }
 

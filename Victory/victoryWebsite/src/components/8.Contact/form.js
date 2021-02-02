@@ -69,7 +69,7 @@ const ContactForm = () => {
 
           <button type="submit">SEND FORM</button>
         </form>
-        <hr />
+        <hr className={styles.hr}/>
       </div>
     </>
   )

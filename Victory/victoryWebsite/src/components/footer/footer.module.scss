@@ -24,35 +24,36 @@
         padding-top: 1.5rem;
         justify-content: flex-start;
         align-items: flex-start;
-    }
-    .contact_icons{
-        color:#FBD872;
-        margin-right: 2rem;
-        div{
-            width: .9rem;
-            height: auto;
+        .contact_icons{
+            color:#FBD872;
+            margin-right: 2rem;
+            div{
+                width: .9rem;
+                height: auto;
+            }
+        }
+        .locationIcon{
+            width: .7rem !important;
+        }
+        p{
+            margin: 0;
+            padding: 0;
+            width: 70vw;
+            font-size: 16px;
+            line-height: 21px;
         }
     }
-    .locationIcon{
-        width: .7rem !important;
-    }
-    p{
-        margin: 0;
-        padding: 0;
-        width: 70vw;
-    }
+
 }
 .follow_container{
     padding-top: 1rem;
     width: 60vw;
-    bottom: 10vh;
     h3{
         color: white;
         margin: 0;
         font-size: 18px;
     }
 }
-
 .media_list{
     width: 100%;
     padding: 1rem 0;
@@ -68,7 +69,6 @@
         text-align: center;
     }
 }
-
 .copyright{
     padding-top: 2rem;
     p{
@@ -76,4 +76,55 @@
         margin: 0;
         padding: 0;
     }
+}
+
+@media (min-width: 800px) {
+    .container{
+        padding: 4rem 8rem; 
+        .contact{
+            padding-bottom: 0rem;
+        }
+        .flex_container{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .logo_text{
+                width: 50%;
+                padding-right: 4rem;
+                p{
+                    font-size: 16px;
+                    line-height: 21px;
+                    font-weight: 100;
+                }
+            }
+            .div{
+               width: 50%;
+            }
+            .contact_div{
+                padding-top:1rem ;
+                    p{
+                width: auto;
+                }
+            }
+         
+        }
+    }
+    .hr{
+        width: 100%;
+        display: block; height: 1px;
+        border: 0; border-top: .1px solid #fed8802f;
+        margin: 0; padding: 0;
+    }
+    .follow_container{
+        padding-top: 1rem;
+        width: 15rem;
+        bottom: 2vh !important;
+        h3{
+            color: white;
+            margin: 0;
+            font-size: 18px;
+        }
+    }
+
 }
