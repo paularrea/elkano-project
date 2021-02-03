@@ -15,9 +15,37 @@ button{
   background-color: #FBD872;
   text-transform: uppercase;
   padding: .7rem;
+  cursor: pointer;
   border: none;
+  outline-color: #FBD872;
+  a{
+    text-decoration: none;
+    color: #1D1F2A;
+    &:visited{
+      text-decoration: none;
+    }
+    &:hover{
+      text-decoration: none;
+    }
+    &:focus{
+      text-decoration: none;
+    }
+    &:active{
+      text-decoration: none;
+    }
+  }
 }
 
 .website{
   overflow-x: hidden;
+}
+
+@media (min-width: 800px) {
+  button{
+    color: #1D1F2A;
+    background-color: #FBD872;
+    text-transform: uppercase;
+    width: auto;
+    padding: 1rem 1.2rem;
+  }
 }

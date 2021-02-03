@@ -59,7 +59,7 @@ const DesktopHeader = () => {
           </AnchorLink>
         </nav>
         <div>
-          <button>VICTORY SHOP</button>
+          <button> <a href="https://www.victoryshop.ch/en/" rel="noreferrer" target="_blank">VICTORY SHOP</a></button>
         </div>
       </div>
     </header>

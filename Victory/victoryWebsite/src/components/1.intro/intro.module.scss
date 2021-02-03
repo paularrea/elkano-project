@@ -52,9 +52,12 @@
         line-height: 32px;
       }
       .btn_container{
-        width: 310px;
+        width: auto;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
+        button{
+          margin-right: 1rem;
+        }
       }
     }
 }
