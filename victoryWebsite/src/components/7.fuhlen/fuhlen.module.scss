@@ -1,0 +1,116 @@
+.fulhen_container{
+    background-color: #F5F6FC;
+    h1{
+        font-size: 60px;
+        color: #F5F6FC;
+        -webkit-text-stroke: 2px #C4D8E7;
+        font-weight: 700;
+        margin: 0;
+        padding: 2rem 3rem;
+       }
+    
+    .container{
+       padding: 2rem; 
+       h2{
+        font-size: 30px;
+        color: #1D1F2A;
+        font-weight: 400;
+        margin: 0;
+       }
+       h5{
+        padding: 1.5rem 0;
+        font-size: 16px;
+        font-weight: 400;
+        color: #1D1F2A;
+        margin: 0;
+       }
+    }
+}
+@media (min-width: 870px) {
+    .fulhen_container{
+        position: relative;
+        background-color: #F5F6FC;
+        h1{
+            position: absolute;
+            width: 50rem;
+            top: 5rem;
+            left: 5rem;
+            font-size: 120px;
+            color: transparent;
+            -webkit-text-stroke: 3px #C4D8E7;
+            font-weight: 700;
+            margin: 0;
+            padding: 2rem 3rem;
+           }
+        
+        .container{
+            display: flex;
+            background-color: #E6E7F4;
+            justify-content: center;
+            align-items: center;
+            padding: 4rem 2rem; 
+           h2{
+            font-size: 44px;
+            line-height: 48px;
+            color: #1D1F2A;
+            font-weight: 400;
+            margin: 0;
+           }
+           h5{
+            padding: 1.5rem 0;
+            font-size: 24px;
+            line-height: 32px;
+            width: 27rem;
+            font-weight: 400;
+            color: #1D1F2A;
+            margin: 0;
+           }
+           p{
+            padding: 1.5rem 0;
+            font-size: 16px;
+            line-height: 21px;
+            width: 27rem;
+            font-weight: 400;
+            color: #1D1F2A;
+            margin: 0;
+           }
+        }
+        .text_container{
+            width: 40%;
+            margin: 0 1rem;
+            h2,h5,p{
+                width: 35vw;
+            }
+        }
+    }
+    
+}
+@media (min-width: 900px) {
+    .container{
+        padding: 6rem 4rem; 
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 950px) {
+    .container{
+        padding: 6rem 6rem; 
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 1100px) {
+    .container{
+        padding: 6rem 10rem; 
+    }
+
+}
+@media (min-width: 1300px) {
+    .container{
+        padding: 6rem 15rem; 
+        padding-bottom: 0;
+    }
+}
+@media (min-width: 1600px) {
+    .container{
+        padding: 6rem 20rem; 
+    }
+}
