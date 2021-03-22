@@ -6,10 +6,11 @@
 
 @font-face {
   font-family: 'Newzald';
-  src: local('Newzald'), url(./components/fonts/Newzald/NewzaldTest-Book.woff)  format('woff');
+  src: local('Newzald'), url(./components/fonts/Newzald/NewzaldTest-Medium.woff)  format('woff');
 }
 
 body {
+  overflow-x: hidden;
   margin: 0;
   font-family: 'Muli', sans-serif;
   font-size: 18pt;
@@ -23,19 +24,19 @@ p{
 
 h1, h2, h3, h4{
   font-family: 'Newzald', 'Times New Roman', Times, serif;
-  font-size: 150pt;
+  font-weight: lighter;
   margin: 0;
   padding: 0;
 }
 
 h2{
-  font-size: 50pt;
+  font-size: 144px;
 }
 
 h3{
-  font-size: 50pt;
+  font-size: 80px
 }
 
 h4{
-  font-size: 35pt;
+  font-size: 50px;
 }

@@ -12,11 +12,11 @@
     .title_container {
         margin: 0;
         img{
-            width: 70px;
-            height: 70px;
+            width: 90px;
+            height: 93px;
         }
         h2{
-            margin-top: 1rem;
+            margin-top: 5rem;
             color: #D8D8D8;
             text-decoration: underline;
             line-height: 25px;
@@ -40,8 +40,11 @@
     .text_container{
         width: 20vw;
         text-align: left;
+        color: #0C1020;
         p{
-            font-size: 15pt;
+            margin-top: 1rem;
+            font-size: 14px;
+            width: 60%;
         }
     }
     .img_container{
@@ -69,7 +72,7 @@
         width: 100vw;
     }
     div{
-        width: 45%;
+        width: 40%;
         color: #D8D8D8;
         position: absolute;
         top: 50%;
@@ -83,11 +86,11 @@
     align-items: center;
     margin: 125px 0;
     text-align: left;
-    p{
+    h4{
+        color: #0C1020;
         margin-left: 500px;
-        width: 30%;
-        font-size: 25pt;
-        line-height: 35pt;
+        width: 40%;
+        line-height: 70px;
     }
 }
 

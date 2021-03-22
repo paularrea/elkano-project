@@ -14,7 +14,7 @@ const VideoComponent = () => {
     <div className={styles.video_container}>
       {playVideo ? (
         <div>
-          <video controls autoPlay className={styles.video}>
+          <video controls autoPlay muted className={styles.video}>
             <source src={video} type="video/mp4" />
             <source src={video} type="video/ogg" />
           </video>

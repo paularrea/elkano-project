@@ -8,6 +8,8 @@ import foto3 from "../images/foto3.jpg";
 import foto4 from "../images/foto4.jpg";
 import line from "../images/icons/line.png";
 import VideoComponent from "./VideoComponent";
+import ChangeBgImg from "./ChangeBgImg";
+import SafeBirthComponent from "./SafeBirthComponent";
 
 const Intro = () => {
   return (
@@ -16,8 +18,7 @@ const Intro = () => {
         <div className={style.title_container}>
           <img src={icon_liberia} alt="liberia silouette map" />
           <h2>
-            Liberi
-            <br />a
+            Liberia
           </h2>
         </div>
         <div className={style.arrow_container}>
@@ -40,17 +41,17 @@ const Intro = () => {
 
       <div className={style.img_ebola_container}>
         <div>
-          <h4>Yamah risked her own life to deliver babies during the Ebola</h4>
+          <h4>Yamah risked her own life to deliver babies during the Ebola outbreak.</h4>
         </div>
         <img src={foto3} alt="Yamah ebola" />
       </div>
       <div className={style.ebola_text_container}>
-        <p>
+        <h4>
           The epidemic devastated Liberia’s fragile healthcare system. Maternal
           deaths surged. But <span style={{ color: "#D99E94" }}>even here</span>
           , midwives like Yamah persevered in tending to mothers and their
           newborns.{" "}
-        </p>
+        </h4>
       </div>
 
       <div className={style.img_woman_baby_container}>
@@ -58,6 +59,8 @@ const Intro = () => {
       </div>
 
       <VideoComponent />
+      <ChangeBgImg/>
+      <SafeBirthComponent/>
     </>
   );
 };

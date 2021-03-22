@@ -2,8 +2,9 @@
     position: relative;
     margin: 200px 0;
     .video{
+        outline: none !important;
         width: 65vw;
-        height: 50vh;
+        height: 40vw;
     }
     .video_container_img{
         margin: 0 auto;
@@ -11,7 +12,7 @@
         background-size: cover;
         background-position: center;
         width: 65vw;
-        height: 50vh;
+        height: 40vw;
         .play_icon{
             position: absolute ;
             top: 50%;
