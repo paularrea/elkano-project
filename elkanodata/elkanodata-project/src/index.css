@@ -1,0 +1,41 @@
+
+@font-face {
+  font-family: 'Muli';
+  src: local('Muli'), url(./components/fonts/Muli/Muli-Regular.woff)  format('woff');
+}
+
+@font-face {
+  font-family: 'Newzald';
+  src: local('Newzald'), url(./components/fonts/Newzald/NewzaldTest-Book.woff)  format('woff');
+}
+
+body {
+  margin: 0;
+  font-family: 'Muli', sans-serif;
+  font-size: 18pt;
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4{
+  font-family: 'Newzald', 'Times New Roman', Times, serif;
+  font-size: 150pt;
+  margin: 0;
+  padding: 0;
+}
+
+h2{
+  font-size: 50pt;
+}
+
+h3{
+  font-size: 50pt;
+}
+
+h4{
+  font-size: 35pt;
+}

@@ -1,0 +1,22 @@
+.video_container{
+    position: relative;
+    margin: 200px 0;
+    .video{
+        width: 65vw;
+        height: 50vh;
+    }
+    .video_container_img{
+        margin: 0 auto;
+        background-image: url("../images/foto1.jpg");
+        background-size: cover;
+        background-position: center;
+        width: 65vw;
+        height: 50vh;
+        .play_icon{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
