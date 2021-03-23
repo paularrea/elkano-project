@@ -14,10 +14,16 @@
         width: 65vw;
         height: 40vw;
         .play_icon{
+            cursor: pointer;
             position: absolute ;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
+            filter: brightness(70%);
+            &:hover {
+                filter: brightness(100%);
+            }
+           
         }
     }
 }

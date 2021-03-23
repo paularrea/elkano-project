@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import style from "../styles/changeBgImg.module.scss";
 import foto5 from "../images/foto5.jpg";
 import foto3 from "../images/foto3.jpg";
+import { Parallax } from "react-parallax";
 
 const ChangeBgImg = () => {
   const [equipped, setEquipped] = useState(false);
@@ -17,8 +18,8 @@ const ChangeBgImg = () => {
   };
 
   return (
-    <>
-      <div className={style.container}>
+    <Parallax bgImage={equipped ? foto3 : foto5} strength={150}>
+      <div className={style.container} style={{ height: "40vw" }}>
         <div className={style.center}>
           <p>
             With support from Johnson Johnson, UNFPA is working to equip
@@ -31,7 +32,7 @@ const ChangeBgImg = () => {
                 equipped ? style.circle_btn : style.circle_btn_disabled
               }
             >
-              <p>equipped</p>
+              equipped
             </button>
             <button
               onClick={clickUnequipped}
@@ -39,14 +40,14 @@ const ChangeBgImg = () => {
                 unequipped ? style.circle_btn : style.circle_btn_disabled
               }
             >
-              <p>unequipped clinic</p>
+              unequipped
+              <br />
+              clinic
             </button>
           </div>
         </div>
-        {equipped && <img src={foto3} alt="Yamah ebola" />}
-        {unequipped && <img src={foto5} alt="Yamah ebola" />}
       </div>
-    </>
+    </Parallax>
   );
 };
 

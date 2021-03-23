@@ -27,18 +27,11 @@
             width: 150px;
             height: 150px;
             background-color: transparent;
+            color: white;
             border: 3px solid white;
+            font-size: 18px;
             border-radius: 50%;
             outline: none;
-            p{
-                position: absolute;
-                color: white;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 18px;
-
-            }
         }
         .circle_btn_disabled{
             outline: none;
@@ -50,14 +43,11 @@
             height: 150px;
             border: 1px solid rgb(255, 255, 255, .47);
             border-radius: 50%;
-            p{
-                color: rgb(255, 255, 255, .47);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                font-size: 18px;
-
+            color: rgb(255, 255, 255, .47);
+            font-size: 18px;
+            &:hover{
+            border: 1px solid rgb(255, 255, 255, .8);
+            color: rgb(255, 255, 255, .8);
             }
         }
     }

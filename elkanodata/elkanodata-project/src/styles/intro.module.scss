@@ -1,5 +1,6 @@
 .intro_container{
     height: 900px;
+    max-height: 900px;
     width: 100%;
     position: relative;
     display:flex;
@@ -9,22 +10,31 @@
     background-image: url('../images/foto1.jpg');
     background-size: cover;
     background-position: center;
+    transform:scale(1.2);
+    animation: scale 20s linear infinite;
+    overflow: hidden;
     .title_container {
         margin: 0;
+        height: fit-content;
         img{
             width: 90px;
             height: 93px;
         }
         h2{
-            margin-top: 5rem;
+            margin-top: 1rem;
             color: #D8D8D8;
-            text-decoration: underline;
-            line-height: 25px;
+            border-bottom: 9px solid #D8D8D8;
+            line-height: 5.5vw;
         }
       }
     .arrow_container{
+        outline: transparent;
+        cursor: pointer;
+        animation: pump 1s infinite;
         position: absolute;
         bottom: 1rem;
+        border: none;
+        background-color: transparent !important;
         img{
             width: 30px;
             height: 65px;
@@ -41,16 +51,12 @@
         width: 20vw;
         text-align: left;
         color: #0C1020;
+        z-index: 99;
         p{
             margin-top: 1rem;
-            font-size: 14px;
+            font-size: .75vw;
+            line-height: 1.05vw;
             width: 60%;
-        }
-    }
-    .img_container{
-        .yamah_img{
-            width: 65vw;
-            height: auto;
         }
     }
     .line{
@@ -90,7 +96,7 @@
         color: #0C1020;
         margin-left: 500px;
         width: 40%;
-        line-height: 70px;
+        line-height: 3.2vw;
     }
 }
 
@@ -103,3 +109,28 @@
     }
 }
   
+@keyframes pump
+{
+  0%
+  {
+    transform: scale( 1 );
+  }
+  50%
+  {
+    transform: scale( 1.1 );
+  }
+  100%
+  {
+    transform: scale( 1 );
+  }
+}
+    
+  @keyframes scale {
+    100% {
+      -webkit-transform:scale(1);
+      -moz-transform:scale(1);
+      -ms-transform:scale(1);
+      -o-transform:scale(1);
+      transform:scale(1);
+    }
+  }
