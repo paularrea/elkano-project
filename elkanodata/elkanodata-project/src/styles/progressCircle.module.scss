@@ -1,0 +1,27 @@
+.button {
+        position: relative;
+        width: 27vw;
+        height: 27vw;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+        outline: none;
+        cursor: pointer;
+        border: 1px dashed #D0D0D0;
+        background-color: transparent;
+        .mouseIcon{
+            width: 69px;
+            height: 78px;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+      }
+    .circle_progress {
+        position: absolute;
+        left: 0;
+        top: 0;
+        
+      }
+

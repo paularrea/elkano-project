@@ -1,10 +1,10 @@
-import React, { useRef } from "react";
-import style from "../styles/intro.module.scss";
+import React, { useRef, useEffect } from "react";
+import style from "../../styles/storyLiberia.module.scss";
 import { Parallax } from "react-scroll-parallax";
 
-import icon_liberia from "../images/icons/a_icon_liberia.png";
-import arrow from "../images/icons/arrow.png";
-import line from "../images/icons/line.png";
+import icon_liberia from "../../images/icons/a_icon_liberia.png";
+import arrow from "../../images/icons/arrow.png";
+import line from "../../images/icons/line.png";
 import VideoComponent from "./VideoComponent";
 import ChangeBgImg from "./ChangeBgImg";
 import SafeBirthComponent from "./SafeBirthComponent";
@@ -12,14 +12,18 @@ import ParallaxYamahFace from "./parallaxYamahFace";
 import ParallaxYamahEbola from "./parallaxYamahEbola";
 import ParallaxWomanBaby from "./parallaxWomanBaby";
 
-const Intro = () => {
+const StoryLiberia = () => {
   const myRef = useRef(null);
   const executeScroll = () =>
     myRef.current.scrollIntoView({ block: "center", behavior: "smooth" });
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      <div className={style.intro_container}>
+      <div className={style.container}>
+        <div className={style.imgBg}>
           <div className={style.title_container}>
             <img src={icon_liberia} alt="liberia silouette map" />
             <h2>Liberia</h2>
@@ -27,6 +31,7 @@ const Intro = () => {
           <button onClick={executeScroll} className={style.arrow_container}>
             <img src={arrow} alt="scroll arrow" />
           </button>
+        </div>
       </div>
       <div ref={myRef} className={style.flex_container}>
         <Parallax
@@ -63,4 +68,4 @@ const Intro = () => {
   );
 };
 
-export default Intro;
+export default StoryLiberia;

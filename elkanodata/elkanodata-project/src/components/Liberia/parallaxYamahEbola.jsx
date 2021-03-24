@@ -1,7 +1,7 @@
 import React from "react";
-import foto3 from "../images/foto3.jpg";
+import foto3 from "../../images/foto3.jpg";
 import { Parallax } from "react-parallax";
-import style from "../styles/intro.module.scss";
+import style from "../../styles/storyLiberia.module.scss";
 
 const ParallaxYamahFace = () => {
   return (

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import styles from "../styles/safebirth.module.scss";
+import styles from "../../styles/safebirth.module.scss";
 
 const SafeBirthComponent = () => {
   const [animate, setAnimate] = useState(false);

@@ -1,7 +1,7 @@
 import React from "react";
-import foto4 from "../images/foto4.jpg";
+import foto4 from "../../images/foto4.jpg";
 import { Parallax } from "react-parallax";
-import style from "../styles/intro.module.scss";
+import style from "../../styles/storyLiberia.module.scss";
 
 const ParallaxWomanBaby = () => {
   return (

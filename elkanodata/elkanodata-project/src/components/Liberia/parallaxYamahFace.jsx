@@ -1,5 +1,5 @@
 import React from "react";
-import foto_face from "../images/foto2.jpg";
+import foto_face from "../../images/foto2.jpg";
 import { Parallax } from "react-parallax";
 
 const ParallaxYamahFace = () => {

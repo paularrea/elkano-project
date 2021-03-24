@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import style from "../styles/changeBgImg.module.scss";
-import foto5 from "../images/foto5.jpg";
-import foto3 from "../images/foto3.jpg";
+import style from "../../styles/changeBgImg.module.scss";
+import foto5 from "../../images/foto5.jpg";
+import foto3 from "../../images/foto3.jpg";
 import { Parallax } from "react-parallax";
 
 const ChangeBgImg = () => {

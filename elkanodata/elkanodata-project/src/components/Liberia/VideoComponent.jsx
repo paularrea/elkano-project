@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Parallax } from "react-scroll-parallax";
-import playIcon from "../images/icons/a_btn_play.png";
-import styles from "../styles/video.module.scss";
-import video from "../video/JOSIE.mp4";
+import playIcon from "../../images/icons/a_btn_play.png";
+import styles from "../../styles/video.module.scss";
+import video from "../../video/JOSIE.mp4";
 
 const VideoComponent = () => {
   const [playVideo, setPlayVideo] = useState(false);
@@ -14,7 +14,7 @@ const VideoComponent = () => {
   return (
     <div className={styles.video_container}>
       {playVideo ? (
-        <Parallax y={[-30, 30]} tagOuter="figure">
+        <Parallax x={[10, -10]} tagOuter="figure">
           <div>
             <video controls autoPlay muted className={styles.video}>
               <source src={video} type="video/mp4" />
@@ -23,7 +23,7 @@ const VideoComponent = () => {
           </div>
         </Parallax>
       ) : (
-        <Parallax y={[10, -30]} tagOuter="figure">
+        <Parallax x={[10, -10]} tagOuter="figure">
           <div className={styles.video_container_img}>
             <img
               src={playIcon}

@@ -1,14 +1,23 @@
 import "./App.scss";
+import { Switch, Route } from "react-router-dom";
 import { ParallaxProvider } from "react-scroll-parallax";
-import Intro from "./components/intro";
-import NextPrevComponent from "./components/NextPrevComponent";
+import StoryLiberia from "./components/Liberia/StoryLiberia";
+import NextPrevComponent from "./components/Liberia/NextPrevComponent";
+import Intro from "./components/Intro/intro";
 
 function App() {
   return (
     <ParallaxProvider>
       <div className="App">
-        <Intro />
-        <NextPrevComponent />
+        <Switch>
+          <Route exact path="/">
+            <Intro />
+          </Route>
+          <Route path="/liberia">
+            <StoryLiberia />
+            <NextPrevComponent />
+          </Route>
+        </Switch>
       </div>
     </ParallaxProvider>
   );

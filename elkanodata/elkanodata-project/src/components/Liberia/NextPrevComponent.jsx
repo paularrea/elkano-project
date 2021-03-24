@@ -1,8 +1,8 @@
 import React from 'react'
-import styles from "../styles/next-prev.module.scss"
-import line from "../images/icons/line2.jpg"
-import prev from "../images/prev.jpg"
-import next from "../images/next.jpg"
+import styles from "../../styles/next-prev.module.scss"
+import line from "../../images/icons/line2.jpg"
+import prev from "../../images/prev.jpg"
+import next from "../../images/next.jpg"
 
 const NextPrevComponent = () => {
     return (
