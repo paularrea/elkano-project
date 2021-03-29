@@ -11,6 +11,7 @@ import SafeBirthComponent from "./SafeBirthComponent";
 import ParallaxYamahFace from "./parallaxYamahFace";
 import ParallaxYamahEbola from "./parallaxYamahEbola";
 import ParallaxWomanBaby from "./parallaxWomanBaby";
+import Fade from "react-reveal";
 
 const StoryLiberia = () => {
   const myRef = useRef(null);
@@ -22,17 +23,19 @@ const StoryLiberia = () => {
   }, []);
   return (
     <>
-      <div className={style.container}>
-        <div className={style.imgBg}>
-          <div className={style.title_container}>
-            <img src={icon_liberia} alt="liberia silouette map" />
-            <h2>Liberia</h2>
+      <Fade>
+        <div className={style.container}>
+          <div className={style.imgBg}>
+            <div className={style.title_container}>
+              <img src={icon_liberia} alt="liberia silouette map" />
+              <h2>Liberia</h2>
+            </div>
+            <button onClick={executeScroll} className={style.arrow_container}>
+              <img src={arrow} alt="scroll arrow" />
+            </button>
           </div>
-          <button onClick={executeScroll} className={style.arrow_container}>
-            <img src={arrow} alt="scroll arrow" />
-          </button>
         </div>
-      </div>
+      </Fade>
       <div ref={myRef} className={style.flex_container}>
         <Parallax
           className={style.text_container}
