@@ -5,49 +5,74 @@
         width: 100vw;
     }
     .center{
-        width: 45%;
+        width: 90%;
         height: 50%;
         color: white;
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
     .buttons_container{
         margin: 0 auto;
-        width: 55%;
+        width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         .circle_btn{
-            margin-top: 150px;
+            margin-top: 5vh;
             position: relative;
             cursor: pointer;
-            width: 150px;
-            height: 150px;
+            width: 100px;
+            height: 100px;
             background-color: transparent;
             color: white;
-            border: 3px solid white;
-            font-size: 18px;
+            border: 2px solid white;
+            font-size: 12px;
             border-radius: 50%;
             outline: none;
         }
         .circle_btn_disabled{
             outline: none;
             cursor: pointer;
-            margin-top: 150px;
+            margin-top: 5vh;
             position: relative;
-            width: 150px;
+            width: 100px;
+            height: 100px;
             background-color: transparent;
-            height: 150px;
             border: 1px solid rgb(255, 255, 255, .47);
             border-radius: 50%;
             color: rgb(255, 255, 255, .47);
-            font-size: 18px;
+            font-size: 12px;
             &:hover{
             border: 1px solid rgb(255, 255, 255, .8);
             color: rgb(255, 255, 255, .8);
+            }
+        }
+    }
+}
+
+@media (min-width: 870px) {
+    .container{
+        .center{
+            width: 45%;
+            top: 50%;
+        }
+        .buttons_container{
+            width: 55%;
+            .circle_btn{
+                margin-top: 150px;
+                width: 150px;
+                height: 150px;
+                border: 3px solid white;
+                font-size: 18px;
+            }
+            .circle_btn_disabled{
+                margin-top: 150px;
+                width: 150px;
+                height: 150px;
+                font-size: 18px;
             }
         }
     }

@@ -1,31 +1,25 @@
 .container{
-    height: 100vh;
-    max-height: 900px;
     width: 100%;
+    height: 65vh;
     overflow: hidden;
     position: relative;
     .imgBg{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-      // transform:scale(1.2);
-      // animation: scale 35s linear infinite;
       width: 100%;
-      height: 900px;
+      height: 100%;
       background-image: url('../images/foto1.jpg');
       background-size: cover;
       background-position: 80%;
       .title_container {
         width: fit-content;
-        margin: 0;
+        margin: 0 auto;
+        padding-top: 20vh;
         height: fit-content;
         img{
             width: 70px;
             height: auto;
         }
         h2{
-            margin-top: 1rem;
+            margin-top: .5rem;
             color: #D8D8D8;
             border-bottom: 2px solid #D8D8D8;
             line-height: 5.5vw;
@@ -35,8 +29,8 @@
         outline: transparent;
         cursor: pointer;
         animation: pump 1s infinite;
-        position: absolute;
-        bottom: 2rem;
+        margin: 0 auto;
+        padding-top: 10vh;
         border: none;
         background-color: transparent !important;
         img{
@@ -51,17 +45,17 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin: 250px 0;
+    margin: 20vh 0;
     .text_container{
-        width: 20vw;
+        width: 40vw;
         text-align: left;
         color: #0C1020;
         z-index: 99;
         p{
-            margin-top: 1rem;
-            font-size: .75vw;
-            line-height: 1.05vw;
-            width: 60%;
+            margin-top: .5rem;
+            font-size: 2vw;
+            line-height: 2.5vw;
+            width: 80%;
         }
     }
     .line{
@@ -72,7 +66,7 @@
         left: 50%;
         transform: translate(-50%, -50%);
         img{
-            height: 450px;
+            height: 180px;
         }
     }
 }
@@ -95,13 +89,13 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 125px 0;
+    margin: 20vh 0;
     text-align: left;
     h4{
         color: #0C1020;
         margin-left: 500px;
-        width: 40%;
-        line-height: 3.2vw;
+        width: 50%;
+        line-height: 30px;
     }
 }
 .img_woman_baby_container{
@@ -119,61 +113,34 @@
     height: 900px;
     max-height: 900px;
     width: 100%;
-    overflow: hidden;
-    position: relative;
     .imgBg{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-      // transform:scale(1.2);
-      // animation: scale 35s linear infinite;
       width: 100%;
       height: 900px;
-      background-image: url('../images/foto1.jpg');
-      background-size: cover;
       background-position: center;
       .title_container {
-        width: fit-content;
-        margin: 0;
-        height: fit-content;
         img{
             width: 90px;
             height: 93px;
         }
         h2{
             margin-top: 1rem;
-            color: #D8D8D8;
             border-bottom: 9px solid #D8D8D8;
-            line-height: 5.5vw;
         }
       }
     .arrow_container{
-        outline: transparent;
-        cursor: pointer;
-        animation: pump 1s infinite;
         position: absolute;
         bottom: 2rem;
-        border: none;
-        background-color: transparent !important;
-        img{
-            width: 30px;
-            height: 65px;
-        }
       }
     }
   }
 .flex_container{
-    position: relative;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
     margin: 250px 0;
     .text_container{
         width: 20vw;
-        text-align: left;
-        color: #0C1020;
-        z-index: 99;
         p{
             margin-top: 1rem;
             font-size: .75vw;
@@ -182,55 +149,28 @@
         }
     }
     .line{
-        position: absolute;
-        height: 1px;
-        z-index: 999;
-        top: 100%;
-        left: 50%;
-        transform: translate(-50%, -50%);
         img{
             height: 450px;
         }
     }
 }
-.img_ebola_container{
-    position: relative;
-    text-align: center;
-    img{
-        width: 100vw;
-    }
-    div{
-        width: 40%;
-        color: #D8D8D8;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+.img_woman_baby_container{
+  display: flex;
+  justify-content: flex-start;
+  img{
+      width: 70vw;
+      height: auto;
+  }
 }
 .ebola_text_container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     margin: 125px 0;
-    text-align: left;
     h4{
-        color: #0C1020;
-        margin-left: 500px;
         width: 40%;
         line-height: 3.2vw;
     }
 }
-.img_woman_baby_container{
-    display: flex;
-    justify-content: flex-start;
-    img{
-        width: 70vw;
-        height: auto;
-    }
+
 }
-}
-  
 @keyframes pump
 {
   0%

@@ -21,6 +21,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             h4{
+            font-size: 25px;
             position: absolute;
             top: 50%;
             left: 50%;
@@ -39,11 +40,13 @@
         }
         footer{
             position: absolute;
+            width: 90%;
             left: 50%;
             transform: translate(-50%, -50%);
             bottom: 2vw;
+            text-align: right;
             color: #d8d8d828;
-            font-size: .6vw;
+            font-size: 2.5vw;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -55,4 +58,26 @@
             }
         }
     }     
+}
+
+@media (min-width: 870px) {
+    .container{
+        height: 3000px;
+    .fixed_container{
+        .image_container{
+            div{
+                h4{
+                font-size: 2.6vw;
+                }
+            }
+            .circle{
+                width: 27vw;
+                height: 27vw;
+            }
+            footer{
+                font-size: .6vw;  
+                }
+            }
+        }     
+    }
 }

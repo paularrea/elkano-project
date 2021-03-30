@@ -1,6 +1,7 @@
-import React, { useRef, useEffect } from "react";
+import React, { useRef, useEffect, Fragment } from "react";
 import style from "../../styles/storyLiberia.module.scss";
 import { Parallax } from "react-scroll-parallax";
+import Media from "react-media";
 
 import icon_liberia from "../../images/icons/a_icon_liberia.png";
 import arrow from "../../images/icons/arrow.png";
@@ -37,32 +38,91 @@ const StoryLiberia = () => {
         </div>
       </Fade>
       <div ref={myRef} className={style.flex_container}>
-        <Parallax
-          className={style.text_container}
-          x={[-30, 30]}
-          tagOuter="figure"
+        <Media
+          queries={{
+            small: "(max-width: 869px)",
+            large: "(min-width: 870px)",
+          }}
         >
-          <h3>I can work to save my people.</h3>
-          <p>Yamah, a midwife and supervisor of a maternal health clinic.</p>
-        </Parallax>
+          {(matches) => (
+            <Fragment>
+              {matches.small && (
+                <Parallax
+                  className={style.text_container}
+                  x={[20, 40]}
+                  tagOuter="figure"
+                >
+                  <h3 style={{ fontSize: "30px" }}>
+                    I can work to save my people.
+                  </h3>
+                  <p>
+                    Yamah, a midwife and supervisor of a maternal health clinic.
+                  </p>
+                </Parallax>
+              )}
+              {matches.large && (
+                <Parallax
+                  className={style.text_container}
+                  x={[-30, 30]}
+                  tagOuter="figure"
+                >
+                  <h3>I can work to save my people.</h3>
+                  <p>
+                    Yamah, a midwife and supervisor of a maternal health clinic.
+                  </p>
+                </Parallax>
+              )}
+            </Fragment>
+          )}
+        </Media>
         <ParallaxYamahFace />
         <div className={style.line}>
           <img src={line} alt="line" />
         </div>
       </div>
       <ParallaxYamahEbola />
-      <Parallax
-        className={style.ebola_text_container}
-        x={[30, 20]}
-        tagOuter="figure"
+      <Media
+        queries={{
+          small: "(max-width: 869px)",
+          large: "(min-width: 870px)",
+        }}
       >
-        <h4>
-          The epidemic devastated Liberia’s fragile healthcare system. Maternal
-          deaths surged. But <span style={{ color: "#D99E94" }}>even here</span>
-          , midwives like Yamah persevered in tending to mothers and their
-          newborns.{" "}
-        </h4>
-      </Parallax>
+        {(matches) => (
+          <Fragment>
+            {matches.small && (
+              <Parallax
+                className={style.ebola_text_container}
+                x={[-50, -60]}
+                tagOuter="figure"
+              >
+                <h4 style={{fontSize:'20px'}}>
+                  The epidemic devastated Liberia’s fragile healthcare system.
+                  Maternal deaths surged. But{" "}
+                  <span style={{ color: "#D99E94" }}>even here</span>, midwives
+                  like Yamah persevered in tending to mothers and their
+                  newborns.{" "}
+                </h4>
+              </Parallax>
+            )}
+            {matches.large && (
+              <Parallax
+                className={style.ebola_text_container}
+                x={[30, 20]}
+                tagOuter="figure"
+              >
+                <h4>
+                  The epidemic devastated Liberia’s fragile healthcare system.
+                  Maternal deaths surged. But{" "}
+                  <span style={{ color: "#D99E94" }}>even here</span>, midwives
+                  like Yamah persevered in tending to mothers and their
+                  newborns.{" "}
+                </h4>
+              </Parallax>
+            )}
+          </Fragment>
+        )}
+      </Media>
+
       <ParallaxWomanBaby />
       <VideoComponent />
       <ChangeBgImg />

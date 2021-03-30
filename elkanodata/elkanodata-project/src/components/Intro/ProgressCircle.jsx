@@ -36,8 +36,6 @@ const ProgressCircle = () => {
         <button className={style.button}>
           <svg
             viewBox="0 0 50 50"
-            width="27vw"
-            height="27vw"
             className="circle-progress"
           >
             <defs>

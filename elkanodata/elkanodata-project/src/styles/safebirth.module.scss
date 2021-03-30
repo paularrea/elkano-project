@@ -1,5 +1,5 @@
 .container{
-    margin: 300px auto;
+    margin: 15vh auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,7 +11,7 @@
         background: #D99E94;
       }
       .expansion {
-        animation: touch 1.5s ease-out;
+        animation: touchMobile 1.5s ease-out;
         position: absolute;
         background: #D99E94;
       }
@@ -21,8 +21,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        width: 476px;
-        height: 476px;
+        width: 250px;
+        height: 250px;
         border: 1px solid #EAEAEA;
     }
     .outline{
@@ -31,8 +31,8 @@
         justify-content: center;
         align-items: center;
         border-radius: 50%;
-        width: 394px;
-        height: 394px;
+        width: 200px;
+        height: 200px;
         border: 1px solid #DFDFDF;
     }
     button{
@@ -44,11 +44,32 @@
         font-size: 40px;
         border-radius: 50%;
         background-color: transparent;
-        width: 310px;
-        height: 310px;
+        width: 150px;
+        height: 150px;
         border: 1px solid #AFAFAF;
     
     }
+}
+
+@media (min-width: 870px) {
+  .container{
+    margin: 300px auto;
+      .expansion {
+        animation: touch 1.5s ease-out;
+      }
+    .outline2{
+        width: 476px;
+        height: 476px;
+    }
+    .outline{
+        width: 394px;
+        height: 394px;
+    }
+    button{
+        width: 310px;
+        height: 310px;
+    }
+}
 }
 
 @keyframes touch {    
@@ -68,6 +89,27 @@
     border-radius: 50%;
     width: 800px;
     height: 800px;
+    opacity: 0;
+    }
+  }
+
+  @keyframes touchMobile {    
+    0% { 
+    border-radius: 50%;
+    width: 0px;
+    height: 0px;
+    opacity: 0;
+    }
+    70% { 
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    opacity: 1;
+    }
+    100% { 
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
     opacity: 0;
     }
   }
