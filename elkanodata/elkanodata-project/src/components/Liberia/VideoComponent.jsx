@@ -49,7 +49,7 @@ const VideoComponent = () => {
           {matches.large && (
             <div className={styles.video_container}>
               {playVideo ? (
-                <Parallax x={[10, -10]} tagOuter="figure">
+                <Parallax y={[10, -10]} tagOuter="figure">
                   <div>
                     <video controls autoPlay muted className={styles.video}>
                       <source src={video} type="video/mp4" />
@@ -58,7 +58,7 @@ const VideoComponent = () => {
                   </div>
                 </Parallax>
               ) : (
-                <Parallax x={[10, -10]} tagOuter="figure">
+                <Parallax y={[10, -10]} tagOuter="figure">
                   <div className={styles.video_container_img}>
                     <img
                       src={playIcon}

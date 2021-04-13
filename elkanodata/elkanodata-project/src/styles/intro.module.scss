@@ -28,6 +28,12 @@
             transform: translate(-50%, -50%); 
             }
         }
+        .icon_unfpa{
+            position: absolute;
+            top: 2vw;
+            right: 2vw;
+            z-index: 99;
+        }
         .circle{
             width: 27vw;
             height: 27vw;

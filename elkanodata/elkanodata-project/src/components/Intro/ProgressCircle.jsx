@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import style from "../../styles/progressCircle.module.scss";
 import mouse_icon from "../../images/icons/scroll_mouse_icon.png";
 import LandingScratch from "../Intro/LandingScratch";
@@ -14,8 +14,7 @@ const ProgressCircle = () => {
   const position = Math.max(1 - progress, 0);
   const complete = position === 0;
 
-  // We use the useLayoutEffect hook instead of useEffect because we want to measure the height of our article before the user sees it and then we can accurately update the status the user has read in the event the scroll position starts down the page.
-  useLayoutEffect(() => {
+  useEffect(() => {
     const updateHeight = () => {
       if (!circleRef.current) return;
       const { height } = circleRef.current.getBoundingClientRect();
